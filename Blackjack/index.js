@@ -1,7 +1,6 @@
-let firstCard = 12
-let secondCard = 11
-let cards = [firstCard, secondCard]
-let sum = firstCard + secondCard 
+
+let cards = []
+let sum = 0
 let message = ""
 let messageEl = document.getElementById("message")
 /* let sumEL = document.getElementById("sum") */
@@ -9,9 +8,15 @@ let sumEL = document.querySelector("#sum")
 let cardsEl = document.getElementById("cards")
 //Checks if player is still in game
 let blackjack = false
-let isAlive = true
+let isAlive = false
 
 function startGame(){
+    let firstCard = getRandomCard()
+    cards = [firstCard]
+    sum = firstCard
+    message = ""
+    blackjack = false
+    isAlive = true
     playGame()
 }
 
@@ -39,8 +44,21 @@ function playGame(){
 
 function newCard(){
     console.log("Drawing a new card from the deck!")
-    let card = 6
+    let card = getRandomCard()
     sum += card
     cards.push(card)
-    playGame()
+    if(isAlive & !blackjack){
+        playGame()
+    }
+}
+
+function getRandomCard(){
+    let card = Math.floor(Math.random() * 13) + 1
+    if(card == 1){
+        card = 11
+    }
+    if(card >= 11 && card <= 13){
+        card = 10
+    }
+    return card
 }
