@@ -12,3 +12,15 @@ for(let i = 0; i < greetingList.length; i++){
 } */
 let randNum = Math.floor(Math.random() * 6) + 1
 console.log(randNum)
+
+let course = {
+    title: "Learn CSS Grid for Free!",
+    lessons: 16,
+    creator: "Per Harald Borgen",
+    length: 63,
+    level: 2,
+    isFree: true,
+    tags: ["HTML","CSS"]
+}
+
+console.log(course.length)

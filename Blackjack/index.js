@@ -1,4 +1,4 @@
-
+let chips = 0
 let cards = []
 let sum = 0
 let message = ""
@@ -6,9 +6,17 @@ let messageEl = document.getElementById("message")
 /* let sumEL = document.getElementById("sum") */
 let sumEL = document.querySelector("#sum")
 let cardsEl = document.getElementById("cards")
+let playerEl = document.getElementById("player")
 //Checks if player is still in game
 let blackjack = false
 let isAlive = false
+
+let player = {
+   name:  "Kirabo",
+   chips:  145
+}
+
+playerEl.innerText = player.name + ":£ " + player.chips
 
 function startGame(){
     let firstCard = getRandomCard()
@@ -17,6 +25,7 @@ function startGame(){
     message = ""
     blackjack = false
     isAlive = true
+
     playGame()
 }
 
@@ -30,6 +39,7 @@ function playGame(){
     } else if (sum == 21){
         message = "BLACKJACK!"
         blackjack = true
+        chips+= 40
     }else{
         message = "Sorry, you lost. Money is gone!"
         isAlive = false
