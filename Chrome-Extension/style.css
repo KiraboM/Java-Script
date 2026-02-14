@@ -10,6 +10,7 @@ body{
 /*     display: flex;
     flex-direction: row; */
     align-items: center;
+    min-width: 400px;
 }
 
 #input{
@@ -22,7 +23,7 @@ body{
     box-sizing: border-box;
 }
 
-#input-btn{
+button{
     background-color: rgb(19, 160, 19);
     color: white;
     width: 300px;
@@ -32,9 +33,31 @@ body{
     text-align: center;
     margin-top: 0.5rem;
     position: absolute;
+}
+
+
+#input-btn{
+    position: absolute;
     left: 1px;
     top: 100px;
     border: none;
+}
+
+#tab-btn{
+    left: 1px;
+    margin-left: 310px;
+    margin-top: 58px;
+}
+#delete-btn{
+    background-color: white;
+    border: 1px solid rgb(19, 160, 19);
+    color: rgb(19, 160, 19);
+    width: 300px;
+    left: 1px;
+    margin-left: 620px;
+    margin-top: 58px;
+    
+    
 }
 
 #ul-el{
