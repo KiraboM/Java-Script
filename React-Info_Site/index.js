@@ -4,6 +4,9 @@ console.log(element)
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(element) */
 
+import React from "react"
+import ReactDOM from "react"
+
 const nav = (
     <nav>
         <h1>My Website</h1>
