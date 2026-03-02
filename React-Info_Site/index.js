@@ -1,4 +1,31 @@
-/* ReactDOM.render(<ul><li>Hi my name is Bob!</li><li>I like to play golf</li></ul>,
-                document.getElementById("root"))
- */
-ReactDOM.render(<ul><li>Thing 1</li><li>Thing 2</li></ul>, document.getElementById("root"))
+/* const element = <h1 className="header">This is JSX</h1>
+console.log(element)
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(element) */
+
+const nav = (
+    <nav>
+        <h1>My Website</h1>
+        <ul>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+)
+
+ReactDOM.render(nav, document.getElementById("root"))
+
+const myList = (
+    <div>
+        <h1>List</h1>
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+    </div>
+)
+ReactDOM.render(page, document.getElementById("root"))
+document.getElementById("root").append(JSON.stringify(myList))
