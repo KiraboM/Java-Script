@@ -2,11 +2,19 @@ function Header(){
     return (
         <header>
             <nav>
-                <img src="icon.png" width="40px"/>
+                <img src="icon.png"/>
             </nav>
+            <ul className="nav-items">
+                <li>Pricing</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
         </header>
     )
 }
+
+const ul = document.createElement("ul")
+ul.className = ""
 
 function MyFooter(){
     return(
