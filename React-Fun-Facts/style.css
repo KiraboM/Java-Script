@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #21222A
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding-top: 2rem;
+}
+
+.facts{
+    margin: 0;
+    align-self: flex-start;
+    color: rgb(3, 219, 252);
+    font-weight: bold;
+}
+
+.course{
+    color: white;
+    margin-left: 700px;
+}
